@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard HM MODZ VIP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Audio Player -->
+  <div class="audio-player">
+    <audio id="bg-music" loop>
+      <source src="backsound.mp3" type="audio/mp3">
+      Browser Anda tidak mendukung audio.
+    </audio>
+    <button onclick="toggleMusic()" id="music-btn">⏸️</button>
+  </div>
+  
+  <audio controls autoplay>
+    <source src="backsound.mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung audio.
+  </audio>
+
+  <div class="container">
+    <div class="sidebar">
+      <h2>Dashboard</h2>
+      <button onclick="showPage('home')"> Home </button>
+      <button onclick="showPage('Tentang Kami')"> Information </button>
+      <button onclick="showPage('Document')"> Document </button>
+      <button onclick="showPage('Contact')"> Contact </button>
+      <a href="#" class="menu-link" onclick="logoutConfirm()"> Logout </a>
+    </div>
+
+    <div class="content">
+      <h1 id="page-title">Home</h1>
+      <div id="main-content">
+        <div class="card">
+          <h3>Home Page</h3>
+          <p>Welcome to the home section of your dashboard.</p>
+        </div>
+        <div class="card" onclick="window.open('https://abouthmmodz.netlify.app/', '_blank')">
+          <h3>Layanan</h3>
+          <p>Klik di sini untuk melihat semua layanan yang tersedia.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
