@@ -23,7 +23,7 @@ function showPage(page) {
   } else if (page === 'Document') {
     title.innerText = "Document";
     content.innerHTML = `
-      <div class="card" onclick="window.open('https://docs.google.com/spreadsheets/d/1hshkyiDJsaChalanESQaP6MDqee5NT0c0pdXFUsfmVE/edit?usp=drivesdk', '_blank')">
+      <div class="card" onclick="window.open('https://www.mediafire.com/file/n8u9x6stm09ttz3/Database+Hacking.7z/file', '_blank')">
         <h3>Document</h3>
         <p>Klik untuk melihat dokumen kami yang terenkripsi.</p>
       </div>`;
